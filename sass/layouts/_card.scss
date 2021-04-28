@@ -1,0 +1,82 @@
+.card {
+  display: block;
+}
+
+.card:hover,
+.card:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: transform 250ms var(--timing-function);
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__image {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
+
+.card__page-actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  color: var(--light-color);
+  transition: color 250ms var(--timing-function);
+}
+
+.card__text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  border-top: 0px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.card__description {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--second-test-color);
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primery-text-color);
+}
+
+.card__title {
+  margin-bottom: 4px;
+}

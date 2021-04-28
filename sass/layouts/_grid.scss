@@ -1,0 +1,10 @@
+.grid {
+  display: flex;
+  list-style: none;
+  margin-left: -30px;
+}
+
+.grid__item {
+  margin-left: 30px;
+  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
+}

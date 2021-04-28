@@ -1,0 +1,64 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Логотип */
+.header__logo {
+  margin-right: 94px;
+}
+
+/* nav */
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.main-nav__menu {
+  margin-left: 94px;
+}
+
+.menu__item {
+  position: relative;
+}
+.menu__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu__site-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primery-text-color);
+  text-decoration: none;
+
+  transition: color 250ms var(--timing-function);
+}
+
+.menu__site-link--current {
+  color: var(--accent-color);
+}
+
+.menu__site-link--current::after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  top: 76px;
+  border-bottom: 4px solid var(--accent-color);
+  border-radius: 2px;
+}
+
+.menu__site-link:hover,
+.menu__site-link:focus {
+  color: var(--accent-color);
+}

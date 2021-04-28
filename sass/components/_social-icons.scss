@@ -1,0 +1,8 @@
+.social-icons {
+  display: inline-flex;
+  text-align: center;
+}
+
+.social-icons__item + .social-icons__item {
+  margin-left: 10px;
+}

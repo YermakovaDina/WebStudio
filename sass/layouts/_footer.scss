@@ -1,0 +1,97 @@
+.footer {
+  background: var(--dark-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__basement {
+  display: flex;
+  align-items: baseline;
+}
+
+.basement__navigation + .basement__navigation {
+  margin-left: 70px;
+}
+
+.basement__contact {
+  margin-top: 20px;
+}
+
+.footer .contact-list {
+  list-style: none;
+  font-style: normal;
+}
+
+.contact-list__info:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.color-add {
+  color: var(--light-color);
+}
+
+/* Присоединяйтесь */
+
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-color);
+}
+
+.basement__title {
+  margin-bottom: 20px;
+}
+
+/* Подпишитесь */
+
+.navigation__form {
+  display: inline-flex;
+  width: 358px;
+}
+
+.basement__form {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label__input {
+  width: 358px;
+
+  padding: 15px 0 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--dark-bg-color);
+}
+
+.button-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 29px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: var(--light-color);
+}
+
+.icon-send {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
