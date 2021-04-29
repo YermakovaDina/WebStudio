@@ -42,6 +42,11 @@
   color: var(--primery-text-color);
   text-decoration: none;
   transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .menu__site-link--current {
@@ -56,9 +61,4 @@
   top: 76px;
   border-bottom: 4px solid var(--accent-color);
   border-radius: 2px;
-}
-
-.menu__site-link:hover,
-.menu__site-link:focus {
-  color: var(--accent-color);
 }

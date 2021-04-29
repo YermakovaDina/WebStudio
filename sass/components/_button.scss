@@ -6,11 +6,11 @@
   cursor: pointer;
   background-color: var(--accent-color);
   transition: background-color 250ms var(--timing-function);
-}
 
-.button:hover,
-.button:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
 
 .button--hero-view {

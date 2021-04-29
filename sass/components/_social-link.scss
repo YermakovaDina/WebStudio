@@ -8,11 +8,11 @@
   color: var(--additional-color);
   background-color: var(--light-color);
   transition: background-color 250ms var(--timing-function);
-}
 
-.link:hover,
-.link:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .icon {

@@ -23,16 +23,16 @@
   box-sizing: border-box;
   color: var(--additional-color);
   transition: color 250ms var(--timing-function), border 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
 }
 
 .icons {
   fill: currentColor;
   transition: fill 250ms var(--timing-function);
-}
-
-.clients__link:hover,
-.clients__link:focus {
-  border: 1px solid var(--accent-color);
 }
 
 .clients__link:hover .icons,

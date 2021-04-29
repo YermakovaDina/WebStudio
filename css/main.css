@@ -417,8 +417,7 @@ body {
   transition: background-color 250ms var(--timing-function);
 }
 
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   background-color: #188ce8;
 }
 
@@ -707,8 +706,7 @@ body {
   transition: background-color 250ms var(--timing-function);
 }
 
-.link:hover,
-.link:focus {
+.link:hover, .link:focus {
   background-color: var(--accent-color);
 }
 
@@ -801,6 +799,10 @@ body {
   transition: color 250ms var(--timing-function);
 }
 
+.menu__site-link:hover, .menu__site-link:focus {
+  color: var(--accent-color);
+}
+
 .menu__site-link--current {
   color: var(--accent-color);
 }
@@ -813,11 +815,6 @@ body {
   top: 76px;
   border-bottom: 4px solid var(--accent-color);
   border-radius: 2px;
-}
-
-.menu__site-link:hover,
-.menu__site-link:focus {
-  color: var(--accent-color);
 }
 
 .contact-nav {
@@ -833,11 +830,6 @@ body {
   margin-right: 30px;
 }
 
-.contact-link:hover,
-.contact-link:focus {
-  color: var(--accent-color);
-}
-
 .contact-link {
   display: flex;
   align-items: center;
@@ -848,6 +840,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--second-test-color);
   transition: color 250ms var(--timing-function);
+}
+
+.contact-link:hover, .contact-link:focus {
+  color: var(--accent-color);
 }
 
 .contact-link--visual {
@@ -1098,14 +1094,13 @@ body {
   transition: color 250ms var(--timing-function), border 250ms var(--timing-function);
 }
 
+.clients__link:hover, .clients__link:focus {
+  border: 1px solid var(--accent-color);
+}
+
 .icons {
   fill: currentColor;
   transition: fill 250ms var(--timing-function);
-}
-
-.clients__link:hover,
-.clients__link:focus {
-  border: 1px solid var(--accent-color);
 }
 
 .clients__link:hover .icons,
@@ -1239,13 +1234,6 @@ body {
   margin-left: 0px;
 }
 
-.filter:hover,
-.filter:focus {
-  color: var(--light-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 .filter {
   cursor: pointer;
   padding: 6px 22px;
@@ -1253,6 +1241,12 @@ body {
   color: var(--primery-text-color);
   background-color: var(--light-bg-color);
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+}
+
+.filter:hover, .filter:focus {
+  color: var(--light-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .progect {
@@ -1275,8 +1269,7 @@ body {
   display: block;
 }
 
-.card:hover,
-.card:focus {
+.card:hover, .card:focus {
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
