@@ -32,6 +32,12 @@
   margin-right: 50px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .menu--desktop {
+    display: none;
+  }
+}
+
 .menu__site-link {
   display: block;
   padding-top: 32px;
@@ -61,4 +67,10 @@
   top: 76px;
   border-bottom: 4px solid var(--accent-color);
   border-radius: 2px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .menu {
+    display: none;
+  }
 }

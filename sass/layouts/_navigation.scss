@@ -52,3 +52,9 @@
 .contact-link:focus .contact-link__icon {
   fill: var(--accent-color);
 }
+
+@media screen and (max-width: 767.98px) {
+  .contact-nav {
+    display: none;
+  }
+}

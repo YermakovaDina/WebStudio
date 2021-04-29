@@ -3,8 +3,15 @@
   justify-content: center;
   align-items: center;
   padding: 0;
-  margin: 0;
-  --grid-item: 6;
+  --grid-item: 2;
+
+  @media screen and (min-width: 768px) {
+    --grid-item: 3;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --grid-item: 6;
+  }
 }
 
 .clients__customer {

@@ -5,9 +5,29 @@
 
 .team {
   flex-wrap: wrap;
-  --grid-item: 4;
+  --grid-item: 1;
   font-size: 16px;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 768px) {
+    --grid-item: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --grid-item: 4;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
+  .team {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .team {
+    justify-content: center;
+  }
 }
 
 .team__page {
