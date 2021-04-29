@@ -12,7 +12,6 @@
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--primery-text-color);
 }
 
@@ -26,7 +25,6 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-
   color: var(--second-test-color);
 }
 
@@ -53,7 +51,6 @@
   outline: none;
   box-sizing: border-box;
   border-radius: 4px;
-
   transition: border-color 250ms var(--timing-function);
 }
 
@@ -69,17 +66,14 @@
   display: inline-block;
   width: 18px;
   height: 18px;
-
   transition: fill 250ms var(--timing-function);
 }
 
 .form__comment {
   padding: 12px 16px;
-
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-
   cursor: pointer;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -101,11 +95,9 @@
 .form__check {
   display: flex;
   align-items: center;
-
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-
   color: var(--second-test-color);
 }
 
@@ -131,7 +123,6 @@
   width: 16px;
   height: 15px;
   margin-right: 8px;
-
   border: 2px solid #212121;
   border-radius: 2px;
 }
@@ -153,9 +144,7 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
-
   background-color: var(--accent-color);
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid transparent;
   outline: none;
@@ -163,7 +152,6 @@
   padding: 10px 32px;
   min-width: 200px;
   cursor: pointer;
-
   transition: background-color 250ms var(--timing-function);
 }
 
@@ -173,7 +161,6 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;

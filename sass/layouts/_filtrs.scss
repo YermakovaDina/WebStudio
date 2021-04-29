@@ -1,3 +1,4 @@
+/* Портфолио */
 .buttons {
   text-align: center;
   list-style: none;
@@ -38,7 +39,6 @@
   border-radius: 4px;
   color: var(--primery-text-color);
   background-color: var(--light-bg-color);
-
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function),
     box-shadow 250ms var(--timing-function);
 }

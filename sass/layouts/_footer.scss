@@ -1,3 +1,4 @@
+/* Подвал */
 .footer {
   background: var(--dark-bg-color);
   padding-top: 60px;
@@ -22,6 +23,11 @@
   font-style: normal;
 }
 
+.contact-list {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
 .contact-list__info:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -31,7 +37,6 @@
 }
 
 /* Присоединяйтесь */
-
 .title {
   font-weight: 700;
   font-size: 14px;
@@ -46,7 +51,6 @@
 }
 
 /* Подпишитесь */
-
 .navigation__form {
   display: inline-flex;
   width: 358px;
@@ -64,13 +68,11 @@
 
 .form-label__input {
   width: 358px;
-
   padding: 15px 0 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   box-sizing: border-box;
   outline: none;
-
   color: rgba(255, 255, 255, 0.6);
   background-color: var(--dark-bg-color);
 }
@@ -80,12 +82,10 @@
   align-items: center;
   text-align: center;
   margin-left: 29px;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-
   color: var(--light-color);
 }
 

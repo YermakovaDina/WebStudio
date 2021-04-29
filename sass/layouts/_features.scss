@@ -1,3 +1,9 @@
+/*Особенности*/
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section__features {
   --grid-item: 4;
 }
@@ -10,7 +16,6 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
   padding: 0;
   width: 270px;
   height: 120px;
@@ -31,7 +36,6 @@
 
 .features-info__title {
   margin-bottom: 10px;
-
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;

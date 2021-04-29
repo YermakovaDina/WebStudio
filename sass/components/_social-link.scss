@@ -7,12 +7,11 @@
   border-radius: 50%;
   color: var(--additional-color);
   background-color: var(--light-color);
-
   transition: background-color 250ms var(--timing-function);
 }
 
-&:hover,
-&:focus {
+.link:hover,
+.link:focus {
   background-color: var(--accent-color);
 }
 
@@ -20,12 +19,11 @@
   width: 20px;
   height: 20px;
   fill: currentColor;
-
   transition: fill 250ms var(--timing-function);
 }
 
-&:hover .icon,
-&:focus .icon {
+.link:hover .icon,
+.link:focus .icon {
   fill: var(--light-color);
 }
 
