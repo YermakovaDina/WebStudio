@@ -8,6 +8,12 @@
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1199.98px) {
+  .section--our-working {
+    display: none;
+  }
+}
+
 .section--our-team {
   background: var(--light-bg-color);
 }

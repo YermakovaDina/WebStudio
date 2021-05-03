@@ -34,6 +34,7 @@
   text-decoration: none;
   font-weight: 400;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   transition: color 250ms var(--timing-function);
 }
 
@@ -51,10 +52,4 @@
 .contact-link:hover .contact-link__icon,
 .contact-link:focus .contact-link__icon {
   fill: var(--accent-color);
-}
-
-@media screen and (max-width: 767.98px) {
-  .contact-nav {
-    display: none;
-  }
 }

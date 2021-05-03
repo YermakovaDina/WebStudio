@@ -1,15 +1,26 @@
 .progect {
   flex-wrap: wrap;
+  --grid-item: 1;
   background: var(--light-color);
-  --grid-item: 3;
   box-sizing: border-box;
+
+  @media screen and (min-width: 768px) {
+    --grid-item: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --grid-item: 3;
+  }
 }
 
-.section__progect {
-  margin-left: -30px;
-  margin-top: -30px;
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
+  .progect {
+    justify-content: center;
+  }
 }
 
-.section__item {
-  margin-top: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .progect {
+    justify-content: center;
+  }
 }
