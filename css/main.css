@@ -790,19 +790,21 @@ body {
   }
 }
 
+/*
 .mobile-menu-icon:hover,
 .mobile-menu-icon:focus {
   fill: var(--accent-color);
 }
-
+*/
 .mobile-menu-icon {
   cursor: pointer;
   fill: var(--primery-text-color);
   transition: fill 250ms var(--timing-function);
 }
 
+/*.mobile-menu-btn ?*/
 @media screen and (min-width: 767.98px) {
-  .mobile-menu-icon {
+  .mobile-menu-btn {
     display: none;
   }
 }
