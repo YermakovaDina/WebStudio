@@ -73,11 +73,6 @@ body {
   color: var(--primery-text-color);
 }
 
-.header {
-  position: relative;
-  border-bottom: 1px solid #ececec;
-}
-
 /*width: 1200px;*/
 .container {
   width: 100%;
@@ -781,11 +776,12 @@ body {
 }
 
 .mobile-menu-btn {
-  z-index: 105;
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
   border: none;
+  background-color: transparent;
+  z-index: 101;
 }
 
 .mobile-menu-icon:hover,
@@ -794,10 +790,15 @@ body {
 }
 
 .mobile-menu-icon {
-  width: 40px;
-  height: 40px;
   cursor: pointer;
-  fill: #212121;
+  fill: var(--primery-text-color);
+  transition: fill 250ms var(--timing-function);
+}
+
+@media screen and (min-width: 767.98px) {
+  .mobile-menu-icon {
+    display: none;
+  }
 }
 
 .mobile-menu-btn .icon-close {
@@ -833,19 +834,6 @@ body {
   display: block;
 }
 
-/* .mobile-menu__button-mobile {
-  position: absolute;
-  cursor: pointer;
-  top: 10px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  background: var(--light-color);
-  border-radius: 50%;
-  outline: none;
-  transition: background-color 250ms var(--timing-function);
-} */
 .mobile-menu .menu {
   flex-direction: column;
   font-weight: 500;
@@ -890,8 +878,12 @@ body {
   }
 }
 
+.social-link__networks:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
 .mobile-menu__networks:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .mobile-menu__networks {
@@ -899,6 +891,7 @@ body {
 }
 
 .networks-link {
+  padding-right: 10px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -915,6 +908,11 @@ body {
   width: 100%;
   height: 100vh;
   background: #ffffff;
+}
+
+.header {
+  position: relative;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-nav {
@@ -1057,7 +1055,7 @@ body {
 .overlay {
   display: flex;
   align-items: center;
-  max-width: 1600px;
+  width: 100%;
   min-height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -1068,13 +1066,22 @@ body {
 }
 
 .title-hero {
-  max-width: 696px;
+  max-width: 360px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--light-color);
+}
+
+@media screen and (min-width: 767.98px) {
+  .title-hero {
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__title-hero {

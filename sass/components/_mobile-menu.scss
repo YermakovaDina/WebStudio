@@ -1,9 +1,11 @@
 .mobile-menu-btn {
-  z-index: 105;
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
   border: none;
+  background-color: transparent;
+
+  z-index: 101;
 }
 
 .mobile-menu-icon:hover,
@@ -12,10 +14,15 @@
 }
 
 .mobile-menu-icon {
-  width: 40px;
-  height: 40px;
   cursor: pointer;
-  fill: #212121;
+  fill: var(--primery-text-color);
+  transition: fill 250ms var(--timing-function);
+}
+
+@media screen and (min-width: 767.98px) {
+  .mobile-menu-icon {
+    display: none;
+  }
 }
 
 .mobile-menu-btn .icon-close {
@@ -53,20 +60,6 @@
     display: block;
   }
 }
-
-/* .mobile-menu__button-mobile {
-  position: absolute;
-  cursor: pointer;
-  top: 10px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  background: var(--light-color);
-  border-radius: 50%;
-  outline: none;
-  transition: background-color 250ms var(--timing-function);
-} */
 
 .mobile-menu .menu {
   flex-direction: column;
@@ -111,9 +104,12 @@
     display: none;
   }
 }
+.social-link__networks:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
 
 .mobile-menu__networks:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .mobile-menu__networks {
@@ -121,6 +117,7 @@
 }
 
 .networks-link {
+  padding-right: 10px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;

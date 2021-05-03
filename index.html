@@ -17,7 +17,7 @@
 <body>
     <!--Верхняя линия-->
     <header class="header">
-        <div class="main-nav container">
+        <div class="container main-nav">
             <nav class="nav">
                 <a class="logo header__logo" href="./index.html">Web<span class="logo__text">Studio</span></a>
                 <ul class="menu main-nav__menu menu--desktop">
@@ -51,9 +51,9 @@
             aria-expanded="false"
             aria-controls="mobile-menu"
             data-menu-button>
-                <svg class="mobile-menu-icon" aria-label="Переключатель мобильного меню">
-                    <use class="icon-menu" href="./img/sprite.svg#icon-menu_40px"></use>
+                <svg class="mobile-menu-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
                     <use class="icon-close" href="./img/sprite.svg#icon-close_40px"></use>
+                    <use class="icon-menu" href="./img/sprite.svg#icon-menu_40px"></use>
                 </svg>
             </button>
             <div class="mobile-menu" id="mobile-menu" data-menu>
@@ -78,14 +78,18 @@
                     </li>
                 </ul>
                 <ul class="social-link">
-                    <li class="social-link__networks mobile-menu__networks"><a class="networks-link"
-                            href="./index.html">Instagram</a></li>
-                    <li class="social-link__networks mobile-menu__networks"><a class="networks-link" href="./index.html">Twitter</a>
+                    <li class="social-link__networks mobile-menu__networks">
+                        <a class="networks-link" href="./index.html">Instagram</a>
                     </li>
-                    <li class="social-link__networks mobile-menu__networks"><a class="networks-link"
-                            href="./index.html">Facebook</a></li>
-                    <li class="social-link__networks mobile-menu__networks"><a class="networks-link"
-                            href="./index.html">LinkedIn</a></li>
+                    <li class="social-link__networks mobile-menu__networks">
+                        <a class="networks-link" href="./index.html">Twitter</a>
+                    </li>
+                    <li class="social-link__networks mobile-menu__networks">
+                        <a class="networks-link" href="./index.html">Facebook</a>
+                    </li>
+                    <li class="social-link__networks mobile-menu__networks">
+                        <a class="networks-link" href="./index.html">LinkedIn</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -94,13 +98,13 @@
         
 
     <main>
-        <!--Шапка
+        <!--Шапка -->
         <section class="hero overlay">
             <div class="container">
                 <h1 class="title-hero hero__title-hero">эффективные решения для вашего бизнеса</h1>
                 <button class="button button--hero-view" data-modal-open type="button"><span class="title-button">Заказать услугу</span></button>
             </div>
-        </section> -->
+        </section>
     
         <!--Особенности-->
         <section class="section container">
