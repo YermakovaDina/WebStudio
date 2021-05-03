@@ -1,11 +1,17 @@
 .mobile-menu-btn {
   display: inline-flex;
   margin: 0;
-  padding: 0;
+  padding: 10px 0;
   border: none;
   background-color: transparent;
 
   z-index: 101;
+}
+
+@media screen and (max-width: 767.98px) {
+  .mobile-menu-btn {
+    margin-left: auto;
+  }
 }
 
 .mobile-menu-icon:hover,
@@ -72,16 +78,6 @@
 
 .mobile-menu .contact-nav {
   flex-direction: column;
-}
-
-.contact-nav--mobile-pozition {
-  margin-top: auto;
-}
-
-@media screen and (max-width: 767.98px) {
-  .contact-nav--mobile-pozition {
-    display: none;
-  }
 }
 
 .mobile-menu .contact-link--mobile-phone {
