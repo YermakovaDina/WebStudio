@@ -1535,7 +1535,6 @@ body {
 
 /* Портфолио */
 .buttons {
-  text-align: center;
   list-style: none;
   font-weight: 500;
   font-size: 16px;
@@ -1544,8 +1543,26 @@ body {
   border: none;
 }
 
+@media screen and (min-width: 767.98px) {
+  .buttons {
+    text-align: center;
+  }
+}
+
 .section__buttons {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
+  .section__buttons {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1199.98px) {
+  .section__buttons {
+    margin-bottom: 50px;
+  }
 }
 
 .buttons__class {
@@ -1555,6 +1572,7 @@ body {
 
 .section__class {
   margin-left: 8px;
+  margin-bottom: 15px;
 }
 
 .section__class:first-child {
@@ -1592,18 +1610,6 @@ body {
 @media screen and (min-width: 1200px) {
   .progect {
     --grid-item: 3;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 767.98px) {
-  .progect {
-    justify-content: center;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .progect {
-    justify-content: center;
   }
 }
 
