@@ -463,8 +463,8 @@ body {
 .logo {
   font-family: 'Raleway', 'Oleo Script', sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--accent-color);
@@ -758,11 +758,18 @@ body {
 .section__title {
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
+}
+
+@media screen and (min-width: 1199.98px) {
+  .section__title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .section__title--visually-hidden {
@@ -782,7 +789,7 @@ body {
   padding: 10px 0;
   border: none;
   background-color: transparent;
-  z-index: 101;
+  z-index: 103;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -1127,7 +1134,7 @@ body {
   color: var(--light-color);
 }
 
-@media screen and (min-width: 767.98px) {
+@media screen and (min-width: 1199.98px) {
   .title-hero {
     max-width: 696px;
     font-weight: 900;
@@ -1246,11 +1253,6 @@ body {
 }
 
 /* Чем мы занимаемся */
-.section--our-working {
-  list-style: none;
-  padding-bottom: 94px;
-}
-
 .working {
   --grid-item: 3;
 }
