@@ -17,19 +17,17 @@
 <body>
     <!--Верхняя линия-->
     <header class="header">
-        <div class="main-nav container">
+        <div class="container main-nav">
             <nav class="nav">
                 <a class="logo header__logo" href="./index.html">Web<span class="logo__text">Studio</span></a>
-                <ul class="menu">
+                <ul class="menu main-nav__menu menu--desktop">
                     <li class="menu__item nav__item"><a class="menu__site-link"
                             href="./index.html">Студия</a></li>
-                    <li class="menu__item nav__item"><a class="menu__site-link menu__site-link--current"
-                            href="./portfolio.html"><span>Портфолио</span></a></li>
-                    <li class="menu__item nav__item"><a class="menu__site-link"
-                            href="./index.html"><span>Контакты</span></a></li>
+                    <li class="menu__item nav__item"><a class="menu__site-link menu__site-link--current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="menu__item nav__item"><a class="menu__site-link" href="./index.html">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="contact-nav main-nav__contact-nav">
+            <ul class="contact-nav main-nav__contact-nav contact-nav--desktop">
                 <li class="contact-nav__contacts main-nav__contacts">
                     <a class="contact-link" href="mailto:info@devstudio.com">
                         <svg class="contact-link__icon contact-nav__icon">
@@ -47,8 +45,13 @@
                     </a>
                 </li>
             </ul>
-        </div>
-    </header>
+            <button type="button" class="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-menu"
+                data-menu-button>
+                <svg class="mobile-menu-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./img/sprite.svg#icon-menu_40px"></use>
+                    <use class="icon-close" href="./img/sprite.svg#icon-close_40px"></use>
+                </svg>
+            </button>
 
     <!-- Портфолио -->
     <main>
@@ -205,11 +208,12 @@
         </section>
     </main>
        
-    <!--Подвал
+    <!--Подвал -->
     <footer class="footer">
-        <div class="footer__basement container">
+        <div class="container footer__basement">
             <div class="basement__navigation">
-                <a href="./index.html" class="logo">Web<span class="logo__text logo__text--inverse">Studio</span></a>
+                <a href="./index.html" class="logo footer__logo">Web<span
+                        class="logo__text logo__text--inverse">Studio</span></a>
                 <address class="basement__contact">
                     <ul class="contact-list">
                         <li class="contact-list__info">
@@ -217,10 +221,16 @@
                                 <span class="color-add">г. Киев, пр-т Леси Украинки, 26</span>
                             </a>
                         </li>
-                        <li class="contact-list__info"><a class="contact-link contact-link--visual"
-                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="contact-list__info"><a class="contact-link contact-link--visual"
-                                href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        <li class="contact-list__info contact-list__info--footer">
+                            <a class="contact-link contact-link--visual" href="mailto:info@devstudio.com">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="contact-list__info contact-list__info--footer">
+                            <a class="contact-link contact-link--visual" href="tel:+380961111111">+38
+                                096 111 11 11
+                            </a>
+                        </li>
                     </ul>
                 </address>
             </div>
@@ -260,10 +270,10 @@
             <div class="basement__navigation">
                 <h2 class="title basement__title">Подпишитесь на рассылку</h2>
                 <form class="navigation__form basement__form">
-                    <div class="form-label">
+                    <div class="form-label footer__form-label">
                         <input class="form-label__input" type="text" name="name-user" id="name-user" placeholder="E-mail" />
                     </div>
-                    <button class="button button--button-footer" type="submit">
+                    <button type="button" class="button button--button-footer" type="submit">
                         <span class="button-title">Подписаться <svg class="icon-send">
                                 <use href="./img/sprite.svg#icon-icon-send"></use>
                             </svg>
@@ -272,6 +282,6 @@
                 </form>
             </div>
         </div>
-    </footer>-->
+    </footer>
 </body>
 </html>
