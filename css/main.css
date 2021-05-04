@@ -1069,6 +1069,12 @@ body {
   transition: color 250ms var(--timing-function);
 }
 
+@media screen and (min-width: 1199.98px) {
+  .contact-link--visual {
+    justify-content: inherit;
+  }
+}
+
 .contact-link__icon {
   width: 16px;
   height: 16px;
@@ -1415,23 +1421,15 @@ body {
 }
 
 @media screen and (min-width: 1199.98px) {
+  .footer__basement {
+    display: flex;
+    align-items: baseline;
+  }
   .basement__navigation + .basement__navigation {
     margin-left: 70px;
   }
 }
 
-/* desk
-.footer__basement {
-  display: flex;
-  align-items: baseline;
-}
-
-@media screen and (min-width: 1199.98px) {
-.basement__navigation + .basement__navigation {
-  margin-left: 70px;
-}
-}
-*/
 .basement__contact {
   margin-top: 20px;
 }

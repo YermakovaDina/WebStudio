@@ -23,23 +23,14 @@
   }
 }
 @media screen and (min-width: 1199.98px) {
+  .footer__basement {
+    display: flex;
+    align-items: baseline;
+  }
   .basement__navigation + .basement__navigation {
     margin-left: 70px;
   }
 }
-
-/* desk
-.footer__basement {
-  display: flex;
-  align-items: baseline;
-}
-
-@media screen and (min-width: 1199.98px) {
-.basement__navigation + .basement__navigation {
-  margin-left: 70px;
-}
-}
-*/
 
 .basement__contact {
   margin-top: 20px;
@@ -60,6 +51,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .contact-list__info:not(:last-child) {
   margin-bottom: 8px;
 }
