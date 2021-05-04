@@ -1,4 +1,5 @@
 .button {
+  height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid transparent;
   border-radius: 4px;
@@ -18,13 +19,13 @@
   min-width: 200px;
 }
 
+@media screen and (min-width: 1199.98px) {
+  .button--button-footer {
+    margin-left: 12px;
+  }
+}
+
 .button--button-footer {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-left: 12px;
   margin-right: auto;
-  padding: 0;
   min-width: 200px;
-  cursor: pointer;
 }
