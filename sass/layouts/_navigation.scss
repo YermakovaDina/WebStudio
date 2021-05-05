@@ -7,6 +7,9 @@
   .contact-nav {
     display: flex;
   }
+  .main-nav__contact-nav {
+    margin-left: auto;
+  }
   .main-nav__contacts:first-child {
     margin-right: 30px;
   }
@@ -22,20 +25,22 @@
   .contact-nav--desktop {
     margin: 21px 0;
   }
+  .main-nav__contact-nav {
+    margin-left: auto;
+  }
 }
+
 @media screen and (max-width: 1199.98px) {
   .main-nav__contacts:first-child {
     margin-bottom: 10px;
   }
 }
 
-.main-nav__contact-nav {
-  margin-left: auto;
-}
-
+/*
 .contact-nav--mobil {
   margin-bottom: auto;
 }
+*/
 
 .contact-link {
   display: flex;
@@ -52,7 +57,7 @@
   }
 }
 
-@media screen and (min-width: 1199.98px) {
+@media screen and (max-width: 767.98px) and (min-width: 1199.98px) {
   .contact-link {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -68,7 +73,7 @@
   line-height: 1.17;
   font-size: 34px;
 }
-
+/*отступы*/
 .contact-link--mobile-mail {
   font-size: 24px;
   line-height: 1.17;

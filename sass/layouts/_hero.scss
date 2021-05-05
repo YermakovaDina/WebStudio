@@ -19,7 +19,7 @@
   background-size: cover;
 }
 
-@media screen and (min-width: 1199.98px) {
+@media screen and (min-width: 1199.98px) and (max-width: 1600px) {
   .overlay {
     height: 600px;
   }

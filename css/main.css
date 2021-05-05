@@ -479,17 +479,37 @@ body {
 }
 
 .form {
-  width: 528px;
+  width: 450px;
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
+}
+
+@media screen and (min-width: 1199.98px) {
+  .form {
+    width: 528px;
+  }
+  .form__title {
+    line-height: 1.15;
+  }
+  .form__comment {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .form__check {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .form__option {
+    padding-left: 12px;
+  }
 }
 
 .form__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
@@ -551,8 +571,8 @@ body {
 
 .form__comment {
   padding: 12px 16px;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   cursor: pointer;
   resize: none;
@@ -565,7 +585,6 @@ body {
 .form__option {
   display: flex;
   align-items: center;
-  padding-left: 12px;
 }
 
 .modal__option {
@@ -575,8 +594,8 @@ body {
 .form__check {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--second-test-color);
 }
@@ -659,6 +678,7 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   visibility: visible;
   transition: visibility 250ms var(--timing-function);
+  z-index: 102;
 }
 
 .backdrop.is-hidden {
@@ -675,13 +695,20 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   background-color: var(--light-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: background-color 250ms var(--timing-function), transform 250ms var(--timing-function);
+}
+
+@media screen and (min-width: 1199.98px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__button-close {
@@ -789,7 +816,7 @@ body {
   padding: 10px 0;
   border: none;
   background-color: transparent;
-  z-index: 103;
+  z-index: 101;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -798,9 +825,10 @@ body {
   }
 }
 
-.mobile-menu-icon:hover,
-.mobile-menu-icon:focus {
-  fill: var(--accent-color);
+@media screen and (min-width: 767.98px) {
+  .mobile-menu-btn {
+    display: none;
+  }
 }
 
 .mobile-menu-icon {
@@ -809,10 +837,8 @@ body {
   transition: fill 250ms var(--timing-function);
 }
 
-@media screen and (min-width: 767.98px) {
-  .mobile-menu-btn {
-    display: none;
-  }
+.mobile-menu-icon:hover, .mobile-menu-icon:focus {
+  fill: var(--accent-color);
 }
 
 .icon-close {
@@ -827,11 +853,6 @@ body {
   display: none;
 }
 
-/*
-.mobile-menu-btn.is-open .icon-close {
-  display: block;
-}
-*/
 .mobile-menu {
   position: absolute;
   top: -100%;
@@ -861,7 +882,7 @@ body {
 }
 
 .mobile-menu .contact-nav {
-  flex-direction: column;
+  display: block;
   margin-bottom: auto;
 }
 
@@ -869,13 +890,6 @@ body {
   display: flex;
 }
 
-/*
-@media screen and (max-width: 767.98px) {
-  .social-link {
-    display: none;
-  }
-}
-*/
 .social-link__networks:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
@@ -889,7 +903,7 @@ body {
 }
 
 .networks-link {
-  padding-right: 10px;
+  padding-right: 1px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -997,6 +1011,9 @@ body {
   .contact-nav {
     display: flex;
   }
+  .main-nav__contact-nav {
+    margin-left: auto;
+  }
   .main-nav__contacts:first-child {
     margin-right: 30px;
   }
@@ -1012,6 +1029,9 @@ body {
   .contact-nav--desktop {
     margin: 21px 0;
   }
+  .main-nav__contact-nav {
+    margin-left: auto;
+  }
 }
 
 @media screen and (max-width: 1199.98px) {
@@ -1020,14 +1040,11 @@ body {
   }
 }
 
-.main-nav__contact-nav {
-  margin-left: auto;
-}
-
+/*
 .contact-nav--mobil {
   margin-bottom: auto;
 }
-
+*/
 .contact-link {
   display: flex;
   align-items: center;
@@ -1042,7 +1059,7 @@ body {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 1199.98px) {
+@media screen and (max-width: 767.98px) and (min-width: 1199.98px) {
   .contact-link {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -1059,6 +1076,7 @@ body {
   font-size: 34px;
 }
 
+/*отступы*/
 .contact-link--mobile-mail {
   font-size: 24px;
   line-height: 1.17;
@@ -1118,7 +1136,7 @@ body {
   background-size: cover;
 }
 
-@media screen and (min-width: 1199.98px) {
+@media screen and (min-width: 1199.98px) and (max-width: 1600px) {
   .overlay {
     height: 600px;
   }
