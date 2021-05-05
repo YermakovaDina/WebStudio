@@ -75,13 +75,25 @@
   color: var(--primery-text-color);
 }
 
-.mobile-menu .contact-nav {
-  display: block;
-  margin-bottom: auto;
+.mobile-menu .nav-mobile {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+}
+
+.mobile-menu .navigation {
+  margin-bottom: 32px;
+}
+
+.navigation__contact:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .social-link {
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .social-link__networks:not(:last-child) {
@@ -92,12 +104,12 @@
   margin-right: 10px;
 }
 
-.mobile-menu__networks {
+.social-link__networks-link {
   margin-bottom: 48px;
 }
 
 .networks-link {
-  padding-right: 1px;
+  padding-right: 10px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -107,6 +119,6 @@
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: #188ce8;
   }
 }

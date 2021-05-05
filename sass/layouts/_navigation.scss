@@ -36,12 +36,6 @@
   }
 }
 
-/*
-.contact-nav--mobil {
-  margin-bottom: auto;
-}
-*/
-
 .contact-link {
   display: flex;
   align-items: center;
@@ -57,22 +51,24 @@
   }
 }
 
-@media screen and (max-width: 767.98px) and (min-width: 1199.98px) {
+@media screen and (min-width: 1199.98px) {
   .contact-link {
     padding-top: 32px;
     padding-bottom: 32px;
   }
 }
 
-.mobile-menu__contact-nav {
-  margin-bottom: auto;
-}
-
 .contact-link--mobile-phone {
   color: var(--accent-color);
   line-height: 1.17;
   font-size: 34px;
+
+  &:hover,
+  &:focus {
+    color: #188ce8;
+  }
 }
+
 /*отступы*/
 .contact-link--mobile-mail {
   font-size: 24px;
