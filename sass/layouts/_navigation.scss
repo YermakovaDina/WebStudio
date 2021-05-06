@@ -3,7 +3,7 @@
   list-style: none;
 }
 
-@media screen and (min-width: 1199.98px) {
+@media screen and (min-width: 1200px) {
   .contact-nav {
     display: flex;
   }
@@ -21,7 +21,7 @@
   }
 }
 
-@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .contact-nav--desktop {
     margin: 21px 0;
   }
@@ -39,8 +39,8 @@
 .contact-link {
   display: flex;
   align-items: center;
-  font-weight: 500;
-  line-height: 1.14;
+  font-weight: $fw500;
+  line-height: $lh1-14;
   letter-spacing: 0.02em;
   color: var(--second-test-color);
   transition: color 250ms var(--timing-function);
@@ -60,7 +60,7 @@
 
 .contact-link--mobile-phone {
   color: var(--accent-color);
-  line-height: 1.17;
+  line-height: $lh1-17;
   font-size: 34px;
 
   &:hover,
@@ -72,7 +72,7 @@
 /*отступы*/
 .contact-link--mobile-mail {
   font-size: 24px;
-  line-height: 1.17;
+  line-height: $lh1-17;
 }
 
 .contact-link--visual {
@@ -82,7 +82,7 @@
   align-items: center;
   justify-content: center;
   font-weight: 400;
-  line-height: 1.71;
+  line-height: $lh1-71;
   letter-spacing: 0.03em;
   transition: color 250ms var(--timing-function);
 }

@@ -42,7 +42,7 @@
 }
 
 .contact-list {
-  line-height: 1.71;
+  line-height: $lh1-71;
   letter-spacing: 0.03em;
 }
 
@@ -62,9 +62,9 @@
 
 /* Присоединяйтесь */
 .title {
-  font-weight: 700;
+  font-weight: $fw700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: $lh1-14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--light-color);
@@ -119,8 +119,8 @@
   align-items: center;
   text-align: center;
   margin-left: 29px;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: $fw700;
+  font-size: $fs16;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--light-color);

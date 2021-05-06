@@ -39,15 +39,15 @@
 
 .features-info__title {
   margin-bottom: 10px;
-  font-weight: 700;
-  line-height: 1.14;
+  font-weight: $fw700;
+  line-height: $lh1-14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primery-text-color);
 }
 
 .features-info__description {
-  line-height: 1.71;
+  line-height: $lh1-71;
   letter-spacing: 0.03em;
   color: var(--second-test-color);
 }

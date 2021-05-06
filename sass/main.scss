@@ -1,7 +1,12 @@
+@import './vendors/modern-normalize';
+
 @import './utils/variables';
+@import './utils/breakpoints';
+
 @import './base/common';
 @import './base/container';
 @import './base/fonts';
+
 @import './components/button';
 @import './components/logo';
 @import './components/modal-form';
@@ -10,6 +15,7 @@
 @import './components/social-link';
 @import './components/title';
 @import './components/mobile-menu';
+
 @import './layouts/header';
 @import './layouts/navigation';
 @import './layouts/hero';
