@@ -59,14 +59,14 @@
 }
 
 .card__description {
-  font-size: 16px;
+  font-size: $fs16;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--second-test-color);
 }
 
 .card__title {
-  font-weight: 700;
+  font-weight: $fw700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;

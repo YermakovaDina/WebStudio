@@ -14,20 +14,20 @@
   }
   .form__comment {
     font-size: 12px;
-    line-height: 1.17;
+    line-height: $lh1-17;
   }
   .form__check {
     font-size: 14px;
-    line-height: 1.71;
+    line-height: $lh1-71;
   }
   .form__option {
-    padding-left: 12px;
+    padding-left: $fs12;
   }
 }
 
 .form__title {
-  margin-bottom: 12px;
-  font-weight: 700;
+  margin-bottom: $fs12;
+  font-weight: $fw700;
   font-size: 20px;
   line-height: 1.5;
   text-align: center;
