@@ -1127,6 +1127,7 @@ body {
 
 .mobile-menu {
   position: absolute;
+  display: flex;
   top: -100%;
   left: 0;
   width: 100%;
@@ -1154,9 +1155,8 @@ body {
 }
 
 .mobile-menu .nav-mobile {
-  position: absolute;
-  bottom: 0;
-  left: 40px;
+  flex-direction: column-reverse;
+  margin-top: auto;
 }
 
 .mobile-menu .navigation {
