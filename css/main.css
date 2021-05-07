@@ -1129,7 +1129,7 @@ body {
   /*position: fixed;*/
   position: absolute;
   display: flex;
-  top: -100%;
+  top: -130%;
   left: 0;
   width: 100%;
   min-height: 100vh;
