@@ -751,7 +751,7 @@ body {
 }
 
 .form {
-  width: 450px;
+  max-width: 450px;
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
@@ -1126,6 +1126,7 @@ body {
 }
 
 .mobile-menu {
+  /*position: fixed;*/
   position: absolute;
   display: flex;
   top: -100%;
@@ -1173,6 +1174,7 @@ body {
 
 .social-link {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 32px;
   padding-bottom: 32px;
   margin-bottom: 16px;

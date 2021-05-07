@@ -45,6 +45,7 @@
 }
 
 .mobile-menu {
+  /*position: fixed;*/
   position: absolute;
 
   display: flex;
@@ -96,6 +97,7 @@
 
 .social-link {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 32px;
   padding-bottom: 32px;
   margin-bottom: 16px;
