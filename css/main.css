@@ -1154,6 +1154,10 @@ body {
   color: var(--primery-text-color);
 }
 
+.mobile-menu .menu .menu__site-link--mobile {
+  color: var(--accent-color);
+}
+
 .mobile-menu .nav-mobile {
   flex-direction: column-reverse;
   margin-top: auto;
@@ -1564,7 +1568,7 @@ body {
 }
 
 @media screen and (max-width: 767.98px) {
-  .features-info__text {
+  .features-info__title {
     text-align: center;
   }
 }
@@ -1612,6 +1616,10 @@ body {
 /* Наша команда */
 .section--our-team {
   background: var(--light-bg-color);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .team {
@@ -1732,6 +1740,9 @@ body {
 /* Подвал */
 .footer {
   background: var(--dark-bg-color);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 60px 0;
 }
 
