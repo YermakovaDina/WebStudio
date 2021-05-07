@@ -37,6 +37,12 @@
   height: 70px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .features-info__text {
+    text-align: center;
+  }
+}
+
 .features-info__title {
   margin-bottom: 10px;
   font-weight: $fw700;
