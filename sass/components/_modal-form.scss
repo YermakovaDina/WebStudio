@@ -22,6 +22,10 @@
 .form__field {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form__field--second {
   margin-bottom: 20px;
 }
 
