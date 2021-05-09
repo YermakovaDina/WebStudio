@@ -1109,9 +1109,6 @@ body {
 }
 
 .mobile-menu-btn {
-  position: fixed;
-  top: 10px;
-  right: 15px;
   display: inline-flex;
   margin: 0;
   /*padding: 10px 15px;*/
@@ -1144,6 +1141,12 @@ body {
 
 .icon-close {
   display: none;
+}
+
+.is-open .mobile-menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 15px;
 }
 
 .is-open .icon-close {
