@@ -45,15 +45,15 @@
 }
 
 .mobile-menu {
-  /*position: absolute;*/
   position: fixed;
+  overflow-y: scroll;
 
   display: flex;
 
-  top: -130%;
+  top: -100%;
   left: 0;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
 
   flex-direction: column;
   z-index: 100;

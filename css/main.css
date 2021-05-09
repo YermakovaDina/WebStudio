@@ -975,21 +975,6 @@ body {
   transform: translate(-50%, -50%) scale(0.5);
 }
 
-/*
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 450px;
-  height: 609px;
-  overflow-y: scroll;
-  background-color: var(--light-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  transform: translate(-50%, -50%) scale(1);
-  transition: background-color 250ms var(--timing-function), transform 250ms var(--timing-function);
-}
-*/
 .modal {
   position: fixed;
   top: 50%;
@@ -1021,21 +1006,6 @@ body {
   }
 }
 
-/*
-@media screen and (max-width: 480px) {
-  .modal {
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .modal {
-    width: 528px;
-    height: 581px;
-  }
-}
-*/
 .modal__button-close {
   position: absolute;
   display: flex;
@@ -1182,13 +1152,13 @@ body {
 }
 
 .mobile-menu {
-  /*position: absolute;*/
   position: fixed;
+  overflow-y: scroll;
   display: flex;
-  top: -130%;
+  top: -100%;
   left: 0;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   flex-direction: column;
   z-index: 100;
   padding-top: 48px;
