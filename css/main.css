@@ -1143,7 +1143,7 @@ body {
   display: none;
 }
 
-.is-open .mobile-menu-btn {
+.mobile-menu-btn.is-open {
   position: fixed;
   top: 10px;
   right: 15px;
