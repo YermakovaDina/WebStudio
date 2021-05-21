@@ -21,8 +21,9 @@
             <nav class="nav">
                 <a class="logo header__logo" href="./index.html">Web<span class="logo__text">Studio</span></a>
                 <ul class="menu main-nav__menu menu--desktop">
-                    <li class="menu__item nav__item"><a class="menu__site-link menu__site-link--current" href="./index.html">Студия</a></li>
+                    <li class="menu__item nav__item"><a class="menu__site-link menu__site-link--current" href="#studio">Студия</a></li>
                     <li class="menu__item nav__item"><a class="menu__site-link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="menu__item nav__item"><a class="menu__site-link" href="#team">Команда</a></li>
                     <li class="menu__item nav__item"><a class="menu__site-link" href="#contact">Контакты</a></li>
                 </ul>
             </nav>
@@ -65,15 +66,18 @@
     </header>
     <!-- mobile-overlay -->
         <div class="mobile-menu" id="mobile-menu" data-menu>
-                <ul class="menu">
+            <ul class="menu">
                 <li class="menu__item nav__item">
-                    <a class="menu__site-link menu__site-link--mobile" href="./index.html">Студия</a>
+                    <a class="menu__site-link menu__site-link--mobile" href="#studio" data-item>Студия</a>
                 </li>
                 <li class="menu__item nav__item">
                     <a class="menu__site-link" href="./portfolio.html">Портфолио</a>
                 </li>
                 <li class="menu__item nav__item">
-                    <a class="menu__site-link" href="./index.html">Контакты</a>
+                    <a class="menu__site-link" href="#team" data-item2>Команда</a>
+                </li>
+                <li class="menu__item nav__item">
+                    <a class="menu__site-link" href="#contact" data-item3>Контакты</a>
                 </li>
             </ul>
             <div class="nav-mobile">
@@ -116,7 +120,7 @@
         </section>
     
         <!--Особенности-->
-        <section class="section container">
+        <section id="studio" class="section container">
                 <h2 class="section__title section__title--visually-hidden">Особенности</h2>
                 <ul class="section__features grid">
                     <li class="grid__item"> 
@@ -207,7 +211,7 @@
         </section>
         
         <!--Наша команда-->
-        <section class="section section--our-team">
+        <section id="team" class="section section--our-team">
                 <div class="container">
                     <h2 class="section__title">Наша команда</h2>
                     <ul class="grid team">
